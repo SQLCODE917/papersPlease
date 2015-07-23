@@ -1,6 +1,8 @@
 (function () {
-	module.exports = function () {
-		'use strict';
+
+	'use strict';
+	
+	module.exports = (function () {
 
 		return {
 			checkPermissions: checkPermissions
@@ -23,5 +25,5 @@
 				return true;
 			}
 		}
-	};
+	})();
 })();

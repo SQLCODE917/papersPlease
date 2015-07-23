@@ -2,8 +2,8 @@ module.exports = function (options) {
 	var templateService = options.templateService;
 	var userService = options.userService;
 	var navigationMap = require('./navigationMap');
-	var util = require('./util')();
-	var checkMenuItemPermissions = require('./permissionsFilter')().checkPermissions(userService);
+	var util = require('./util');
+	var checkMenuItemPermissions = require('./permissionsFilter');
 
 	return {
 		buildHomeMenu: buildHomeMenu,
